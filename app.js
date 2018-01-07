@@ -12,25 +12,24 @@ video.addEventListener('loadedmetadata', function() {
 // Play and pause the video.
 let playPause = document.getElementById('playPause');
 playPause.addEventListener('click', function() {
-  if (video.paused || video.ended) myPlay()
-  else myPause();
+  if (video.paused || video.ended) video.play()
+  else video.pause();
 });
 
 // Play and pause the video on video click.
 video.addEventListener('click', function() {
-  if (video.paused || video.ended) myPlay()
-  else myPause();
+  if (video.paused || video.ended) video.play()
+  else video.pause();
 });
 
-function myPlay() {
-  video.play();
-  playPause.innerText = "Pause"
-}
+// Update play/pause based on play state.
+video.addEventListener('pause', function() {
+  playPause.innerText = "Play";
+});
 
-function myPause() {
-  video.pause();
-  playPause.innerText = "Play"
-}
+video.addEventListener('play', function() {
+  playPause.innerText = "Pause";
+});
 
 // Update a progress bar and time text based on current video time.
 let progress = document.getElementById('progress');
