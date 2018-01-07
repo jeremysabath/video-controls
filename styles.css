@@ -1,0 +1,24 @@
+#controls {
+  list-style-type: none;
+}
+
+#controls {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+#controls > li {
+  margin: 0px 6px;
+}
+
+#progressContainer {
+  flex-grow: 1;
+}
+
+#progress {
+  width: 100%;
+}

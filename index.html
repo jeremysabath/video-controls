@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Jeremy's Basic Video Player</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div>
+      <video id="video" controls height="300px">
+        <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+        <source src="http://clips.vorwaerts-gmbh.de/VfE.webm" type="video/webm">
+        <source src="http://clips.vorwaerts-gmbh.de/VfE.ogv" type="video/ogv">
+        Sorry. You're browser doesn't support HTML5 video. Consider making a better life decision, or
+        <a href="media/the-view.mp4" download>download the video here</a>
+      </video>
+      <ul id="controls">
+        <li><button id="playPause">Play</button></li>
+        <li id="time"></li>
+        <li id="progressContainer"><progress id="progress" value=0></progress></li>
+        <li><button id="skipBackward">&lt; 5s</button></li>
+        <li><button id="skipForward">5s &gt;</button></li>
+        <li><button id="mute">Mute</button></li>
+      </ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
