@@ -5,3 +5,5 @@ Uses the HTML5 media API to build simple custom controls for a video player:
 - Updating progress bar with seek (on click)
 - Skip forward/back 5s
 - Mute/unmute
+
+[View it live](https://jsfiddle.net/jeremysabath/yns5hwnj/)
